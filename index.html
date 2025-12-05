@@ -121,6 +121,12 @@
             box-shadow: 0 10px 30px rgb(253, 78, 78, 0.5);
         }
 
+                /* Unter 720px Breite Navigation ausblenden (außer dem gelben CTA Button) */
+        @media (max-width: 720px) {
+            .nav a:not(.nav-cta) {
+                display: none;
+            }
+        }
 
         /* HERO */
         .hero {
@@ -859,5 +865,6 @@
 
 </body>
 </html>
+
 
 
